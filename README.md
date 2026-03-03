@@ -37,7 +37,7 @@ FinFlow is a personal finance tracker that runs entirely in your browser or as a
 
 ## Quick Start
 
-### Option 1: Run in Browser (Recommended to start)
+### Option 1: Run in Browser
 
 ```bash
 # Clone the repo
@@ -81,6 +81,21 @@ npm run electron:build:linux   # Linux .AppImage + .deb
 ```
 
 Built desktop apps appear in the `release/` folder.
+
+---
+
+## Download
+
+**Standalone App**
+
+| Platform | Download |
+|----------|----------|
+| 🪟 Windows | [FinFlow-Setup-1.0.0.exe](https://github.com/TarhineA/finflow/releases/latest) |
+| 🌐 Browser | [finflow.html](https://github.com/TarhineA/finflow/releases/latest) — single file, double-click to open |
+
+> **Windows note:** You may see a SmartScreen warning saying "Unknown publisher." This is normal for indie open-source software. Click **"More info"** → **"Run anyway"**. The app is fully open source — inspect every line of code in this repo.
+
+---
 
 ---
 
@@ -185,9 +200,3 @@ git push origin feature/my-feature
 MIT — do whatever you want with it.
 
 ---
-
-<div align="center">
-
-**Built with ❤️ for people who want to own their financial data.**
-
-</div>
