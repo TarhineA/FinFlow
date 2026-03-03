@@ -59,11 +59,7 @@ Open `http://localhost:5173` in your browser. That's it.
 npm run build
 ```
 
-This creates `dist/index.html` — a single, self-contained file with everything inlined. You can:
-- Double-click it to open in any browser
-- Host it on any static server
-- Email it to someone
-- Put it on a USB drive
+This creates `dist/index.html` — a single, self-contained file with everything inlined. You can Double-click it to open in any browser
 
 No internet required after building.
 
@@ -74,10 +70,10 @@ No internet required after building.
 npm run electron:dev
 
 # Build for your platform
-npm run electron:build         # auto-detect
-npm run electron:build:win     # Windows .exe
-npm run electron:build:mac     # macOS .dmg
-npm run electron:build:linux   # Linux .AppImage + .deb
+npm run electron:build         
+npm run electron:build:win     
+npm run electron:build:mac     
+npm run electron:build:linux   
 ```
 
 Built desktop apps appear in the `release/` folder.
@@ -104,11 +100,11 @@ Built desktop apps appear in the `release/` folder.
 ```
 finflow/
 ├── src/
-│   ├── App.jsx          # The entire app (single component file)
+│   ├── App.jsx          # The entire app
 │   └── main.jsx         # React entry point
 ├── electron/
 │   └── main.cjs         # Electron main process
-├── public/              # Static assets (add icon.png here)
+├── public/              # Static assets
 ├── index.html           # HTML entry point
 ├── vite.config.js       # Vite + single-file plugin config
 ├── package.json         # Dependencies & scripts
@@ -159,41 +155,6 @@ Switch between 8 built-in themes anytime in Settings:
 - Import JSON backups to restore data
 - Reset all data anytime from Settings
 
----
-
-## Adding an App Icon
-
-Place a `icon.png` (512×512px recommended) in the `public/` folder. Electron builder will use it for the desktop app icon.
-
-For macOS, you can also provide an `icon.icns`. For Windows, `icon.ico`.
-
----
-
-## Contributing
-
-PRs are welcome! Some ideas:
-
-- [ ] Dark/light mode toggle
-- [ ] Receipt photo attachment (base64 in localStorage)
-- [ ] Budget templates (Lean Month, Travel Budget, etc.)
-- [ ] Multi-currency support with conversion
-- [ ] Data sync via file (Dropbox/Google Drive folder)
-- [ ] Mobile-responsive bottom navigation
-- [ ] PWA support (service worker for installability)
-
-```bash
-# Fork, clone, branch
-git checkout -b feature/my-feature
-
-# Make changes, then
-npm run dev  # test locally
-
-# Commit and PR
-git add . && git commit -m "Add my feature"
-git push origin feature/my-feature
-```
-
----
 
 ## License
 
