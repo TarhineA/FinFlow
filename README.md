@@ -1,8 +1,8 @@
 <div align="center">
 
-# 💰 FinFlow
+# FinFlow
 
-**Beautiful, offline-first personal finance management.**
+**Offline Personal Finance Management.**
 
 No accounts. No cloud. No tracking. Your data stays on your device.
 
@@ -41,7 +41,7 @@ FinFlow is a personal finance tracker that runs entirely in your browser or as a
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/finflow.git
+git clone https://github.com/TarhineA/FinFlow.git
 cd finflow
 
 # Install dependencies
