@@ -20,18 +20,17 @@ FinFlow is a personal finance tracker that runs entirely in your browser or as a
 
 **Core features:**
 
-- **Expense & Income tracking** — log transactions with categories, dates, and notes
-- **Dashboard** — today's balance, month-end projection, period-end projection, health score
-- **Upcoming 7 days** — see what's coming (subscriptions, recurring transactions)
-- **Subscription manager** — track recurring services with billing cycle normalization
-- **Insights engine** — 15+ rule-based analytics: savings rate, velocity, weekend patterns, spike detection, no-spend streaks, and more
-- **Goals tracker** — set savings targets with progress bars
-- **8 themes** — Emerald, Violet, Cyan, Amber, Rose, Mint, Ice, Sunset
-- **Custom categories** — add/remove categories; deleted categories reassign transactions to "Uncategorized"
-- **Editable budget** — modify your budget amount and dates anytime
-- **Export/Import** — JSON backup & CSV export
-- **Keyboard shortcuts** — `N` (expense), `I` (income), `⌘K` (command palette)
-- **Command palette** — fuzzy search all actions
+* Expense & Income tracking — log transactions with categories, dates, and notes. Edit any transaction by clicking on it.
+* Dashboard — today's balance, month-end projection, period-end projection, monthly net, cash flow chart, top merchants, and monthly summary table.
+* Ledger — day-by-day breakdown per month with income, expenses, net, running balance, totals row, and projected future recurring charges.
+* Bill Calendar — visual calendar grid showing when recurring charges land each month.
+* Recurring manager — track recurring transactions with billing cycle normalization, pause/resume, and full payment history popup.
+* Insights engine — month-over-month comparisons, 3-month averages, savings rate, velocity, streak tracker, daily avg, remaining $/day, top merchants, weekend patterns, and more.
+* Goals tracker — set savings targets and manually allocate funds. Allocations auto-create expenses under "Savings" category. Deleting a goal returns funds to balance.
+* 8 themes — Emerald, Violet, Cyan, Amber, Rose, Mint, Ice, Sunset
+* Custom categories — add/remove categories; deleted categories reassign transactions to "Uncategorized"
+* Editable budget — modify your budget amount and dates anytime
+* Export/Import — JSON backup & CSV export
 
 ---
 
@@ -125,17 +124,6 @@ finflow/
 | Storage | localStorage (browser-native) |
 | Styling | Inline styles with CSS-in-JS design tokens |
 
----
-
-## Keyboard Shortcuts
-
-| Key | Action |
-|-----|--------|
-| `N` | Add expense |
-| `I` | Add income |
-| `B` | Go to dashboard |
-| `⌘K` / `Ctrl+K` | Command palette |
-| `Esc` | Close modals |
 
 ---
 
