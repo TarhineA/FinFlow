@@ -98,8 +98,6 @@ Built apps appear in `release/`.
 | Platform | Download |
 |----------|----------|
 | 🪟 Windows | [FinFlow-Setup.exe](https://github.com/TarhineA/finflow/releases/latest) |
-| 🍎 macOS | [FinFlow.dmg](https://github.com/TarhineA/finflow/releases/latest) |
-| 🐧 Linux | [FinFlow.AppImage](https://github.com/TarhineA/finflow/releases/latest) |
 | 🌐 Browser | [finflow.html](https://github.com/TarhineA/finflow/releases/latest) — single file, double-click to open |
 
 > **Windows note:** You may see a SmartScreen warning saying "Unknown publisher." This is normal for open-source software. Click **"More info"** → **"Run anyway"**. The app is fully open source — inspect every line of code in this repo.
@@ -111,15 +109,15 @@ Built apps appear in `release/`.
 ```
 finflow/
 ├── src/
-│   ├── App.jsx          # The entire app (single-file architecture)
-│   └── main.jsx         # React entry point
+│   ├── App.jsx          
+│   └── main.jsx         
 ├── electron/
-│   └── main.cjs         # Electron main process
-├── public/              # Static assets
-├── index.html           # HTML entry point
-├── vite.config.js       # Vite + single-file plugin config
-├── package.json         # Dependencies & scripts
-├── LICENSE              # MIT
+│   └── main.cjs         
+├── public/              
+├── index.html           
+├── vite.config.js       
+├── package.json         
+├── LICENSE              
 └── README.md
 ```
 
