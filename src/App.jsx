@@ -71,7 +71,7 @@ function getStreak(txs,dailyTarget){let streak=0;const now=pD(tdy());for(let i=0
 function getAllEvents(tx,recTx,from,to){
   const real=tx.filter(t=>t.date>=from&&t.date<=to);
   const proj=[];
-  recTx.forEach(rt=>{const dates=getRecDatesInRange(rt.date,rt.recurrenceCycle||"monthly",from,to);dates.forEach(dd=>{if(dd>tdy()&&!tx.find(t=>t.id===rt.id&&t.date===dd)){proj.push({...rt,date:dd,projected:true,id:rt.id+"-proj-"+dd});}});});
+  recTx.forEach(rt=>{const dates=getRecDatesInRange(rt.date,rt.recurrenceCycle||"monthly",from,to);dates.forEach(dd=>{if(dd>=tdy()&&!tx.find(t=>t.id===rt.id&&t.date===dd)){proj.push({...rt,date:dd,projected:true,id:rt.id+"-proj-"+dd});}});});
   return[...real,...proj];
 }
 // Sum amounts for a given type from an event list
